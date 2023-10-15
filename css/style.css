@@ -167,21 +167,31 @@ ul {
 
 .navigation {
     display: flex;
+    padding: 0;
+    margin: 0;
 }
 
 .first-section .description {
     margin: 20px 0;
 }
 
+.navigation li {
+    width: 50%;
+    padding: 20px 15px ;
+}
+
 .active-link {
-    border-bottom: 2px solid var(--main-color);
+    border-top: 2px solid var(--main-color);
 }
 
 .inactive-link {
-    border-bottom: 2px solid var(--main-bg-color);
+    border-top: 2px solid var(--main-bg-color);
 
 }
 
+.cursor {
+    cursor:pointer;
+}
 .searcher {
     display: flex;
 }
@@ -190,7 +200,7 @@ ul {
     text-align: center;
     width: 50px;
     height: 50px;
-    background-color: #F2F2F2;
+    background-color: var(--main-bg-color);
     border-radius: 10px 0 0 10px;
 }
 
@@ -198,7 +208,7 @@ ul {
 .searcher .search-input input {
     height: 43px;
     width: 120%;
-    border: 2px solid #F2F2F2;
+    border: 2px solid var(--main-bg-color);
 }
 
 .searcher .search-input input::placeholder {
@@ -223,7 +233,14 @@ ul {
     width: 145px;
     margin: 10px 2px;
     border-radius: 25px;
-    border: 2px solid #F2F2F2;
+    border: 3px solid var(--main-bg-color);
+}
+
+.active-filter {
+    background-color: var(--filter-bg-color);
+}
+
+.inactive-filter {
     background-color: white;
 }
 
@@ -262,6 +279,7 @@ ul {
 }
 .activite .card {
     width: 30%;
+    padding: 0;
 }
 .activite .card h3 {
     padding: 10px 20px;
@@ -344,7 +362,6 @@ footer ul li {
 
     }
 
-    /*     activité     */
 
     /*activité*/
 
@@ -370,6 +387,17 @@ footer ul li {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
+
+    .active-link {
+        border-bottom: 2px solid var(--main-color);
+        border-top: none;
+    }
+
+    .inactive-link {
+        border-bottom: 2px solid var(--main-bg-color);
+        border-top: none;
+
+    }
 
     .search-icon-big-screen {
         display: none;
