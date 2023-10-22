@@ -28,17 +28,19 @@
             <img class="logo" src="./images/logo/Booki.png" alt="" srcset="">
         </div>
         <nav>
-            <ul class="navigation cursor">
-                <li class="active-link">Hébergements</li>
-                <li class="inactive-link ">Activités</li>
+            <ul>
+                <li class="cursor"><a href="#hebergements" class="nav-categories">Hébergements</a></li>
+                <li class="cursor"><a href="#activité" class="nav-categories">Activités</a></li>
             </ul>
+
+
         </nav>
     </header>
 
         <main>
             <section class="first-section">
                 <div class="description">
-                    <h1>Trouver votre hébergement  pour les vacances de reve</h1>
+                    <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                     <p>En plein centre-ville ou en pleine nature</p>
                 </div>
 
@@ -67,7 +69,7 @@
                             <span><i class="fa-solid fa-heart"></i></span>
                             <a>Romantique</a>
                         </button>
-                        <button class="filter-btn active-filter cursor">
+                        <button class="filter-btn inactive-filter cursor">
                             <span><i class="fa-solid fa-fire"></i></span>
                             <a>Nos pépites</a>
                         </button>
@@ -85,9 +87,9 @@
 
             <div class="hebergements-and-populaires">
 
-                <section class="hebergements">
+                <section class="hebergements" id="hebergements">
                     <!-- hergemnt cards-->
-                    <h2>Hérbergements a Marseille</h2>
+                    <h2>Hébergements à Marseille</h2>
 
                     <div class="card-container">
                         <article class="card cursor">
@@ -270,8 +272,8 @@
 
 
             </div>
-            <section class="activite">
-                <h2>Activité a Marseille</h2>
+            <section class="activite" id="activité">
+                <h2>Activités à Marseille</h2>
                 <div class="activity-container">
                     <article class="card cursor">
                         <img src="./images/activites/reno-laithienne.jpg" alt="Image de la chambre d'hôtel montrant un lit">
